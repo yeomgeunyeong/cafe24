@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mild</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/slick.js"></script>
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+    <!-- 팝업 -->
+    <div class="pop">
+        <div class="p_inner">
+            <a href="#">첫 쇼핑을 지원하는 3,000원 할인 회원가입 쿠폰</a>
+            <div class="check">
+                <input type="checkbox">
+                <label for="">오늘 하루 보지 않기 <button class="close">Ⅹ</button> </label>
+            </div><!-- check -->
+        </div><!-- p_inner -->
+    </div><!-- pop -->
+
+    <div id="wrap">
+        <header id="header">
+            <div class="head_inner">
+                <div class="top">
+                    <ul class="top_menu">
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">주문조회</a></li>
+                        <li><a href="#">최근본상품</a></li>
+                        <li class="top_hover">
+                            <a href="#">고객센터 </a>
+                            <span class="t_icon"><img src="img/ico_select.png" alt="ico_select"></span>
+                            <ul class="top_sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">상품 사용후기</a></li>
+                                <li><a href="#">상품 Q&A</a></li>
+                                <li><a href="#">자유게시판</a></li>
+                                <li><a href="#">갤러리</a></li>
+                            </ul><!-- top_sub -->
+                        </li>
+                    </ul><!-- top_menu -->
+                </div><!-- top_m -->
+                <div class="mid">
+                    <h1 class="logo"><a href="#"><img src="img/logo.jpg" alt="logo"></a></h1>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill="#000000"
+                                        d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+                                    </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill="#000000"
+                                        d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                                    </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="s_click">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill="#000000"
+                                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- mid -->
+                <div class="bottom">
+                    <ul class="main">
+                        <li class="main_re">
+                            <a href="#">Best Item</a>
+                            <ul class="sub">
+                                <li><a href="#">Item1</a></li>
+                                <li><a href="#">Item2</a></li>
+                            </ul><!-- sub -->
+                        </li>
+                        <li><a href="#">New Item</a></li>
+                        <li><a href="#">Skincare</a></li>
+                        <li><a href="#">Organic Oil</a></li>
+                        <li><a href="#">Hand Cream</a></li>
+                    </ul><!-- main -->
+                </div><!-- bottom -->
+
+                <div class="m_head_inner">
+                    <div class="m_search">
+                        <a href="#" class="mo_search s_click">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#000000"
+                                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                            </svg>
+                        </a>
+                    </div><!-- m_search -->
+                    <div class="m_hamburger">
+                        <a href="#" class="mo_bur">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                                <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
+                                </svg>
+                        </a>
+                    </div><!-- m_hamburger -->
+                </div>
+            </div><!-- head_inner -->
+        </header><!-- header -->
+
+        <section class="slide">
+            <ul class="viewer">
+                <li><a href="#"><img src="img/slide01.png" alt="slide01"></a></li>
+                <li><a href="#"><img src="img/slide02.png" alt="slide02"></a></li>
+            </ul><!-- viewer -->
+        </section><!-- slide -->
+
+        <section class="trend">
+            <div class="trend_inner">
+                <h2 class="sec_title">Trending now</h2>
+                <p class="sec_sub_title">에디터가 선정한</p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/main_banner01_pc.png" alt="main_banner01_pc">
+                        </a>
+                        <p>민감성 피부 스킨&케어</p>
+                        <span>more</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/main_banner02_pc.png" alt="main_banner02_pc">
+                        </a>
+                        <p>수분 마스크팩 묶음 할인</p>
+                        <span>more</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/main_banner03_pc.png" alt="main_banner03_pc">
+                        </a>
+                        <p>저자극 버블 클렌저 기획전</p>
+                        <span>more</span>
+                    </li>
+                </ul>
+            </div>
+        </section><!-- trend -->
+
+        <section class="skin">
+            <div class="skin_inner">
+                <div class="skin_wrap">
+                    <h2 class="sec_title">Skin & body</h2>
+                    <p class="sec_sub_title">건강함을 위한 케어</p>
+                    <div class="skin_tab_wrap">
+                        <a href="#" class="skin_tab on">#Skincare</a>
+                        <a href="#" class="skin_tab">#Hair & Body</a>
+                        <a href="#" class="skin_tab">#Organic Oil</a>
+                    </div><!-- skin_tab -->
+                </div><!-- skin_wrap -->
+                    
+                <div class="product_wrap">
+                    <!-- skincare -->
+                    <ul class="product_list active">
+                        <li>
+                            <div class="product_img">
+                                <img src="img/s&b01_Hair Conditioner.png" alt="Conditioner">
+                                <div class="product_img_hover">
+                                    <span>WISH</span>
+                                    <span>ADD</span>
+                                </div><!-- product_img_hover -->
+                            </div><!-- product_img -->
+                            <div class="product_txt">
+                                <p class="product_name">Hair Conditioner</p>
+                                <p class="del"><del>100,000원</del></p>
+                                <p><b>80,000원</b></p>
+                            </div><!-- product_txt -->
+                        </li>
+                        <li>
+                            <div class="product_img">
+                                <img src="img/s&b02_Hair Essence.png" alt="Essence">
+                                <div class="product_img_hover">
+                                    <span>WISH</span>
+                                    <span>ADD</span>
+                                </div><!-- product_img_hover -->
+                            </div><!-- product_img -->
+                            <div class="product_txt">
+                                <p class="product_name">Hair Essence</p>
+                                <p class="del"><del>100,000원</del></p>
+                                <p><b>90,000원</b></p>
+                                <p class="sale"></p>
+                            </div><!-- product_txt -->
+                        </li>
+                        <li>
+                            <div class="product_img">
+                                <img src="img/s&b03_Hand Soap.png" alt="Soap">
+                                <div class="product_img_hover">
+                                    <span>WISH</span>
+                                    <span>ADD</span>
+                                </div><!-- product_img_hover -->
+                            </div><!-- product_img -->
+                            <div class="product_txt">
+                                <p class="product_name">Body Lotion</p>
+                                <p class="one"><b>50,000원</b></p>
+                            </div><!-- product_txt -->
+                        </li>
+                    </ul><!-- product_list -->
+
+                    <!-- hair&body -->
+                    <ul class="product_list">
+                        <li>
+                            <div class="product_img">
+                                <img src="img/Shampoo.png" alt="Shampoo">
+                                <div class="product_img_hover">
+                                    <span>WISH</span>
+                                    <span>ADD</span>
+                                </div><!-- product_img_hover -->
+                            </div><!-- product_img -->
+                            <div class="product_txt">
+                                <p class="product_name">Shampoo</p>
+                                <p class="one"><b>39,900원</b></p>
+                            </div><!-- product_txt -->
+                        </li>
+                        <li>
+                            <div class="product_img">
+                                <img src="img/s&b03_Hand Soap.png" alt="Soap">
+                                <div class="product_img_hover">
+                                    <span>WISH</span>
+                                    <span>ADD</span>
+                                </div><!-- product_img_hover -->
+                            </div><!-- product_img -->
+                            <div class="product_txt">
+                                <p class="product_name">Hand Soap</p>
+                                <p class="del"><del>100,000원</del></p>
+                                <p><b>50,000원</b></p>
+                                <p class="sale"></p>
+                            </div><!-- product_txt -->
+                        </li>
+                        <li>
+                            <div class="product_img">
+                                <img src="img/Natural Body Oil.png" alt="Oil">
+                                <div class="product_img_hover">
+                                    <span>WISH</span>
+                                    <span>ADD</span>
+                                </div><!-- product_img_hover -->
+                            </div><!-- product_img -->
+                            <div class="product_txt">
+                                <p class="product_name">Natural Body Oil</p>
+                                <p class="del"><del>100,000원</del></p>
+                                <p><b>50,000원</b></p>
+                            </div><!-- product_txt -->
+                        </li>
+                    </ul><!-- product_list -->
+
+                    <!-- organic oil -->
+                    <ul class="product_list">
+                        <li>
+                            <div class="product_img">
+                                <img src="img/s&b02_Hair Essence.png" alt="Essence">
+                                <div class="product_img_hover">
+                                    <span>WISH</span>
+                                    <span>ADD</span>
+                                </div><!-- product_img_hover -->
+                            </div><!-- product_img -->
+                            <div class="product_txt">
+                                <p class="product_name">Hair Conditioner</p>
+                                <p class="del"><del>100,000원</del></p>
+                                <p><b>90,000원</b></p>
+                                <p class="sale"></p>
+                            </div><!-- product_txt -->
+                        </li>
+                        <li>
+                            <div class="product_img">
+                                <img src="img/Natural Body Oil.png" alt="Oil">
+                                <div class="product_img_hover">
+                                    <span>WISH</span>
+                                    <span>ADD</span>
+                                </div><!-- product_img_hover -->
+                            </div><!-- product_img -->
+                            <div class="product_txt">
+                                <p class="product_name">Hair Essence</p>
+                                <p class="del"><del>100,000원</del></p>
+                                <p><b>50,000원</b></p>
+                            </div><!-- product_txt -->
+                        </li>
+                        <li>
+                            <div class="product_img">
+                                <img src="img/s&b01_Hair Conditioner.png" alt="Conditioner">
+                                <div class="product_img_hover">
+                                    <span>WISH</span>
+                                    <span>ADD</span>
+                                </div><!-- product_img_hover -->
+                            </div><!-- product_img -->
+                            <div class="product_txt">
+                                <p class="product_name">Body Lotion</p>
+                                <p class="del"><del>100,000원</del></p>
+                                <p><b>80,000원</b></p>
+                            </div><!-- product_txt -->
+                        </li>
+                    </ul><!-- product_list -->
+                </div><!-- product_wrap -->
+            </div><!-- skin_inner -->
+        </section><!-- skin -->
+
+        <section class="middle_banner"></section>
+
+        <section class="topseller">
+            <h2 class="sec_title">Top seller</h2>
+            <p class="sec_sub_title">지금 가장 인기있는</p>
+            <div class="topseller_wrap">
+                <ul class="topseller_list">
+                    <li>
+                        <div class="product_img">
+                            <img src="img/top01_05.png" alt="top01">
+                            <div class="product_img_hover">
+                                <span>WISH</span>
+                                <span>ADD</span>
+                            </div><!-- product_img_hover -->
+                            <div class="percent">
+                                <p>50%</p>
+                            </div><!-- percent -->
+                        </div><!-- product_img -->
+                        <div class="product_txt">
+                            <p class="product_name">Hand Soap</p>
+                            <p class="del"><del>100,000원</del></p>
+                            <p><b>50,000원</b></p>
+                            <p class="sale"></p>
+                        </div><!-- product_txt -->
+                    </li>
+                    <li>
+                        <div class="product_img">
+                            <img src="img/top02.png" alt="top02">
+                            <div class="product_img_hover">
+                                <span>WISH</span>
+                                <span>ADD</span>
+                            </div><!-- product_img_hover -->
+                            <div class="percent">
+                                <p>50%</p>
+                            </div><!-- percent -->
+                        </div><!-- product_img -->
+                        <div class="product_txt">
+                            <p class="product_name">Natural Body Oil</p>
+                            <p class="del"><del>100,000원</del></p>
+                            <p><b>50,000원</b></p>    
+                        </div><!-- product_txt -->
+                    </li>
+                    <li>
+                        <div class="product_img">
+                            <img src="img/top03.png" alt="top03">
+                            <div class="product_img_hover">
+                                <span>WISH</span>
+                                <span>ADD</span>
+                            </div><!-- product_img_hover -->
+                            <div class="percent">
+                                <p>20%</p>
+                            </div><!-- percent -->
+                        </div><!-- product_img -->
+                        <div class="product_txt">
+                            <p class="product_name">Hair Conditioner</p>
+                            <p class="del"><del>100,000원</del></p>
+                            <p><b>80,000원</b></p>  
+                        </div><!-- product_txt -->
+                    </li>
+                    <li>
+                        <div class="product_img">
+                            <img src="img/top04.png" alt="top04">
+                            <div class="product_img_hover">
+                                <span>WISH</span>
+                                <span>ADD</span>
+                            </div><!-- product_img_hover -->
+                            <div class="percent">
+                                <p>10%</p>
+                            </div><!-- percent -->
+                        </div><!-- product_img -->
+                        <div class="product_txt">
+                            <p class="product_name">Hair Essence</p>
+                            <p class="del"><del>100,000원</del></p>
+                            <p><b>90,000원</b></p> 
+                            <p class="sale"></p>
+                        </div><!-- product_txt -->
+                    </li>
+                    <li>
+                        <div class="product_img">
+                            <img src="img/top01_05.png" alt="top05">
+                            <div class="product_img_hover">
+                                <span>WISH</span>
+                                <span>ADD</span>
+                            </div><!-- product_img_hover -->
+                        </div><!-- product_img -->
+                        <div class="product_txt">
+                            <p class="product_name">Body Lotion</p>
+                            <p><b>50,000원</b></p>  
+                        </div><!-- product_txt -->
+                    </li>
+                </ul><!-- topseller_list -->
+            </div><!-- topseller_wrap -->
+        </section><!-- topseller -->
+
+        <section class="free">
+            <div class="free_inner">
+                <h3>무료 배송 쿠폰 증정</h3>
+                <p>
+                    30,000원 이상 주문하시면 무료 배송 쿠폰을 드려요. <br>
+                    무료 배송 서비스의 혜택을 받아보세요.
+                </p>
+            </div><!-- free_inner -->
+        </section><!-- free -->
+
+        <section class="topseller saleitem">
+            <h2 class="sec_title">Sale item</h2>
+            <p class="sec_sub_title">기간 한정 세일 상품</p>
+            <div class="topseller_wrap">
+                <ul class="topseller_list">
+                    <li>
+                        <div class="product_img">
+                            <img src="img/sale01.png" alt="sale01">
+                            <div class="product_img_hover">
+                                <span>WISH</span>
+                                <span>ADD</span>
+                            </div><!-- product_img_hover -->
+                        </div><!-- product_img -->
+                        <div class="product_txt">
+                            <p class="product_name">Strawberry Hand Cream</p>
+                            <p class="del"><del>30,000원</del></p>
+                            <p><b>28,000원</b></p>
+                        </div><!-- product_txt -->
+                    </li>
+                    <li>
+                        <div class="product_img">
+                            <img src="img/sale02.png" alt="sale02">
+                            <div class="product_img_hover">
+                                <span>WISH</span>
+                                <span>ADD</span>
+                            </div><!-- product_img_hover -->
+                        </div><!-- product_img -->
+                        <div class="product_txt">
+                            <p class="product_name">Moisturizing Hand Cream</p>
+                            <p class="del"><del>60,000원</del></p>
+                            <p><b>50,000원</b></p>    
+                        </div><!-- product_txt -->
+                    </li>
+                    <li>
+                        <div class="product_img">
+                            <img src="img/sale03.png" alt="sale03">
+                            <div class="product_img_hover">
+                                <span>WISH</span>
+                                <span>ADD</span>
+                            </div><!-- product_img_hover -->
+                        </div><!-- product_img -->
+                        <div class="product_txt">
+                            <p class="product_name">Perfume Hand Cream</p>
+                            <p class="del"><del>40,000원</del></p>
+                            <p><b>38,000원</b></p>  
+                        </div><!-- product_txt -->
+                    </li>
+                    <li>
+                        <div class="product_img">
+                            <img src="img/sale04.png" alt="sale04">
+                            <div class="product_img_hover">
+                                <span>WISH</span>
+                                <span>ADD</span>
+                            </div><!-- product_img_hover -->
+                        </div><!-- product_img -->
+                        <div class="product_txt">
+                            <p class="product_name">Rose Hand Cream</p>
+                            <p class="del"><del>60,000원</del></p>
+                            <p><b>50,000원</b></p> 
+                        </div><!-- product_txt -->
+                    </li>
+                    <li>
+                        <div class="product_img">
+                            <img src="img/sale05.png" alt="sale05">
+                            <div class="product_img_hover">
+                                <span>WISH</span>
+                                <span>ADD</span>
+                            </div><!-- product_img_hover -->
+                        </div><!-- product_img -->
+                        <div class="product_txt">
+                            <p class="product_name">Natural Hand Cream</p>
+                            <p class="del"><del>60,000원</del></p>
+                            <p><b>49,000원</b></p>  
+                        </div><!-- product_txt -->
+                    </li>
+                </ul><!-- topseller_list -->
+            </div><!-- topseller_wrap -->
+        </section><!-- topseller -->
+
+        <section class="store">
+            <div class="store_inner">
+                <div class="store_txt">
+                    <h3>매장안내</h3>
+                    <p>
+                        서울특별시 동작구 보라매로0길 00 <br>
+                        00, Boramae-ro 0-gil, Dongjak-gu, Seoul, Republic of Korea <br>
+                        02-0000-0000        
+                    </p>
+                    <a href="#" class="store_btn">자세히 보기</a>
+                </div><!-- store_txt -->
+                <div class="store_img">
+                    <img src="img/main_map_pc.png" alt="main_map_pc">
+                </div><!-- store_img -->
+            </div><!-- store_inner -->
+        </section><!-- store -->
+
+        <hr>
+
+        <footer id="footer">
+            <div class="foot_inner">
+                <div class="f_left">
+                    <div class="f_logo"><img src="img/logo.jpg" alt="logo"></div>
+                    <h4>쇼핑몰 기본정보</h4>
+                    <p>
+                        <b>상호명</b> OOO <b>대표자명</b> OOO <b>사업장 주소</b> 07071 서울특별시 동작구 보라매로5길 15 <br>
+                        <b>대표 전화</b> 0000-0000 <b>사업자 등록번호</b> 000-00-00000 <b>통신판매업 신고번호</b> 기타 <br>
+                        <b>개인정보보호책임자</b> OOO
+                    </p>
+                    <div class="f_menu">
+                        <a href="#">회사소개</a>
+                        <a href="#">이용약관</a>
+                        <a href="#" class="f_menu_b">개인정보처리방침</a>
+                        <a href="#">이용안내</a>
+                    </div>
+                    <p class="copy">Copyright © <b>마일드</b>. All Rights Reserved. Hosting by Cafe24 Corp.</p>
+                </div><!-- f_left -->
+                <div class="f_right">
+                    <ul class="f_right_main">
+                        <li>
+                            <p><b>고객센터 정보</b></p>
+                            <ul class="f_right_sub">
+                                <li>
+                                    <b>상담/주문전화</b>0000-0000
+                                </li>
+                                <li>
+                                    <b>상담/주문 이메일</b> <br> 
+                                    test@test.com
+                                </li>
+                                <li>
+                                    <b>CS운영시간</b> <br>
+                                    Daily : 10:00 - 18:00 <br>
+                                    Lunch : 12:00 - 13:00 <br>
+                                    Sat & Sun & Holiday : Day Off
+                                </li>
+                            </ul><!-- f_right_sub -->
+                        </li>
+                        <li>
+                            <p><b>결제정보</b></p>
+                            <ul class="f_right_sub">
+                                <li>
+                                    <b>무통장 계좌정보</b> <br>
+                                    은행 0000-000-00000 예금주
+                                </li>
+                            </ul><!-- f_right_sub -->
+                        </li>
+                        <li>
+                            <p><b>SNS</b></p>
+                            <ul class="f_right_sub">
+                                <li><a href="#">instagram</a></li>
+                                <li><a href="#">youtube</a></li>
+                                <li><a href="#">facebook</a></li>
+                                <li><a href="#">kakao</a></li>
+                                <li><a href="#">twitter</a></li>
+                                <li><a href="#">blog</a></li>
+                            </ul><!-- f_right_sub -->
+                        </li>
+                    </ul><!-- f_right_main -->
+                </div><!-- f_right -->
+            </div><!-- foot_inner -->
+        </footer><!-- footer -->
+    </div><!-- wrap -->
+
+    <div class="modal"></div>
+    <div class="s_pop">
+        <button class="pop_close">Ⅹ</button>
+        <h1>SEARCH</h1>
+        <p>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#000000"
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                </svg>
+            </a>
+        </p>
+    </div>
+</body>
+
+</html>
